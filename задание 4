@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+
+void printTrip(int tripNumber, int people = 1) {
+    cout << "Поездка №" << tripNumber << ", число путешественников: " << people << endl;
+}
+
+int main() {
+    setlocale(LC_ALL, "Russian");
+
+    printTrip(12);     // выведет 1 человека по умолчанию
+    printTrip(15, 4);  // выведет 4 человека
+
+    return 0;
+}
