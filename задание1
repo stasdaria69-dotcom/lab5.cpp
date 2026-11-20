@@ -1,0 +1,18 @@
+ #include <iostream>
+
+using namespace std;
+
+int totalDistance(int days, int kmPerDay) {
+    return days * kmPerDay;
+}
+
+int main() {
+    setlocale(LC_ALL, "Russian");
+
+    int days = 5;
+    int speed = 60;
+
+    cout << "Общая длина пути: " << totalDistance(days, speed) << " км" << endl;
+
+    return 0;
+}
