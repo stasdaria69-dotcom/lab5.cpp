@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int road(int a, int b) {
+    return a + b;
+}
+
+int road(int a, int b, int c) {
+    return a + b + c;
+}
+
+int main() {
+    setlocale(LC_ALL, "Russian");
+
+    cout << "Длина двух участков: " << road(15, 25) << " км" << endl;
+    cout << "Длина трёх участков: " << road(15, 25, 10) << " км" << endl;
+
+    return 0;
+}
