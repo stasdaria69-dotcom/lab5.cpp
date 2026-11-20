@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+void addKilometer(int& distance) {
+    distance = distance + 1;
+}
+
+int main() {
+    setlocale(LC_ALL, "Russian");
+
+    int path = 100;
+    cout << "Было: " << path << " км" << endl;
+
+    addKilometer(path);
+    cout << "Стало: " << path << " км" << endl;
+
+    return 0;
+}
